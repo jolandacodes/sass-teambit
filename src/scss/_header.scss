@@ -1,0 +1,43 @@
+#header {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  height: 70px;
+
+  .navbar-links {
+    a {
+      @include main-links;
+    }
+
+    li {
+      display: inline-block;
+      margin-left: 30px;
+    }
+
+    li:last-child {
+      margin-right: 0;
+    }
+  }
+
+  #signup-button {
+    border: 1px solid $button-color;
+    border-radius: 7px;
+    background: #fff;
+    color: $button-color;
+    padding: 5px;
+    transition-duration: 0.2s;
+
+    &:hover {
+      background-color: $button-color;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+}
